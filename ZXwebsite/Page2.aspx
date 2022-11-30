@@ -6,6 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
     <style type="text/css">
         .auto-style1 {
             height: 25px;
@@ -14,9 +15,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="title">
             玩家登入<br />
-            <table style="width:100%;">
+            <table class="table">
                 <tr>
                     <td>名稱：</td>
                     <td>
@@ -32,16 +33,21 @@
                 <tr>
                     <td class="auto-style1">&nbsp;</td>
                     <td class="auto-style1">
-                        <asp:Button ID="Button1" runat="server" Text="登入" />
+                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="登入" />
                     </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">尚未註冊過？<asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="註冊" />
+                    </td>
+                    <td class="auto-style1">
+                        &nbsp;</td>
                 </tr>
             </table>
         </div>
         <p>
-            尚未註冊過？</p>
+            &nbsp;</p>
         <p>
-            <asp:Button ID="Button2" runat="server" Text="註冊" />
-        </p>
+            &nbsp;</p>
     </form>
 </body>
 </html>

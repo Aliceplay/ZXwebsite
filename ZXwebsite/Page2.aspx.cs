@@ -13,5 +13,15 @@ namespace ZXwebsite
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {//sign in
+            Response.Redirect("Page4.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {//register
+            Response.Redirect("Page3.aspx");
+        }
     }
 }
